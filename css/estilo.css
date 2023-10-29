@@ -1,29 +1,17 @@
-
-@import url('https://fonts.googleapis.com/css2? family= Maitree:wght@500 & display=swap');
+@import url("https://fonts.googleapis.com/css2? family= Maitree:wght@500 & display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  font-family:'Maitree';
+  font-family: "Maitree";
 }
-
-* ::selection {
-  background-color: #7cbba1; 
-  color: #fff;  
+*::-moz-selection {
+  background-color: #7cbba1;
+  color: #fff;
 }
-
-
-body {
-  background-image: url(https://img.freepik.com/psd-premium/fondo-lavado-autos-herramientas-limpieza_23-2148344752.jpg?w=2000);
-}
-
-
-
-
-/***INDEX PRINCIPAL***/
-
-h1 {
-  color: blue;
+*::selection {
+  background-color: #7cbba1;
+  color: #fff;
 }
 
 header {
@@ -33,75 +21,47 @@ header {
   position: sticky;
   top: 0px;
 }
-
-.titulo {
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .titulo {
   font-size: 30px;
   display: flex;
   padding-left: 10px;
 }
-
-.navbar {
+header .navbar {
   display: flex;
   text-align: center;
   padding: 15px;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  flex: 1;
+  text-align: right;
 }
-
-.menu-link {
+header .navbar .menu-link {
   text-decoration: none;
   text-transform: uppercase;
   padding: 20px 12px;
   color: blue;
   font-weight: bold;
-  color: #58d1f0; 
-  transition: color 0.3s; 
+  color: #58d1f0;
+  transition: color 0.3s;
+}
+header .navbar .menu-link:hover {
+  color: #000000;
 }
 
-.menu-link:hover {
-  color: #000000; 
-}
 .video {
   align-content: center;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
-.video-titulo {
+.video .video-titulo {
   color: black;
   text-align: center;
-}
-
-main {}
-
-header {
-  background-color: darkgrey;
-  width: 100%;
-  position: sticky;
-  top: 0px;
-}
-
-
-
-
-
-
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-
-
-
-article {
-  text-align: center;
-  margin: 20px;
-  border-radius: 10px;
 }
 
 .contenedorimagenes {
@@ -111,40 +71,18 @@ article {
   padding: 20px;
   grid-gap: 10px;
 }
-
-.imgtrabajos {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.trabajosrealizados {
+.contenedorimagenes .trabajosrealizados {
   position: relative;
 }
-
-.trabajo1 {
+.contenedorimagenes .trabajo1 {
   grid-column: span 2;
 }
-
-.infoimg {
-  position: absolute;
-  bottom: 0;
-  background-color: aliceblue;
-}
-
-
-.trabajosrealizados {
-  position: relative;
-  overflow: hidden;
-}
-
-.imgtrabajos {
+.contenedorimagenes .imgtrabajos {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
 }
-
-.infoimg {
+.contenedorimagenes .infoimg {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -154,16 +92,12 @@ article {
   transform: translateY(100%);
   transition: transform 0.3s;
 }
-
-.trabajosrealizados:hover .imgtrabajos {
+.contenedorimagenes .trabajosrealizados:hover .imgtrabajos {
   transform: scale(1.05);
 }
-
-.trabajosrealizados:hover .infoimg {
+.contenedorimagenes .trabajosrealizados:hover .infoimg {
   transform: translateY(0);
 }
-
-
 
 footer {
   position: fixed;
@@ -173,75 +107,48 @@ footer {
   border: top 1px solid rgb(202, 18, 18);
   padding: 10px 0px;
   text-align: center;
-  background-color: rgb(25, 160, 201);
+  background-color: rgb(24, 226, 226);
 }
 
 @media (max-width: 768px) {
   .titulo {
     font-size: 24px;
   }
-
   .navbar ul {
     flex-direction: column;
   }
-
-
   .video iframe {
     width: 100%;
     height: auto;
   }
 }
-
-
-@media (max-width: 1024px) {}
-
-
 .contenedorimagenes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-
 @media screen and (max-width: 768px) {
   .contenedorimagenes {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
 @media screen and (max-width: 480px) {
   .contenedorimagenes {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar {
-  flex: 1;
-  text-align: right;
-}
-
-
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar {
     text-align: center;
     margin-top: 20px;
   }
-
   .formulario {
     max-width: 100%;
     padding: 20px;
   }
-}
+}/*# sourceMappingURL=estilo.css.map */
