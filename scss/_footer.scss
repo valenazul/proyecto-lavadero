@@ -1,10 +1,40 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border: top 1px solid rgb(202, 18, 18);
-    padding: 10px 0px;
-    text-align: center;
-    background-color: rgb(24, 226, 226);
+
+.footer {
+    background-color: #aaa8a8;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-section {
+        flex: 1;
+        text-align: center;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    .footer-section h3 {
+        font-size: 18px;
+    }
+
+
+    #redes-sociales ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #redes-sociales ul li {
+        margin-bottom: 10px;
+    }
+
+    #redes-sociales a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    #redes-sociales a:hover {
+        text-decoration: underline;
+    }
+
+
 }

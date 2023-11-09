@@ -6,11 +6,11 @@
   font-family: "Maitree";
 }
 *::-moz-selection {
-  background-color: #7cbba1;
+  background-color: #ffffff;
   color: #fff;
 }
 *::selection {
-  background-color: #7cbba1;
+  background-color: #ffffff;
   color: #fff;
 }
 
@@ -99,15 +99,34 @@ header .navbar .menu-link:hover {
   transform: translateY(0);
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border: top 1px solid rgb(202, 18, 18);
-  padding: 10px 0px;
+.footer {
+  background-color: #aaa8a8;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-section {
+  flex: 1;
   text-align: center;
-  background-color: rgb(24, 226, 226);
+}
+.footer #logo img {
+  width: 100px;
+}
+.footer .footer-section h3 {
+  font-size: 18px;
+}
+.footer #redes-sociales ul {
+  list-style: none;
+  padding: 0;
+}
+.footer #redes-sociales ul li {
+  margin-bottom: 10px;
+}
+.footer #redes-sociales a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer #redes-sociales a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -150,5 +169,21 @@ footer {
   .formulario {
     max-width: 100%;
     padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-section {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+  .footer-section {
+    text-align: center;
   }
 }/*# sourceMappingURL=estilo.css.map */

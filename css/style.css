@@ -14,9 +14,11 @@
 
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-image: url(https://images.unsplash.com/photo-1621799754526-a0d52c49fad5?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D);
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
 }
-
 
 
 
@@ -163,18 +165,48 @@ article {
   transform: translateY(0);
 }
 
-
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  border: top 1px solid rgb(202, 18, 18);
-  padding: 10px 0px;
-  text-align: center;
-  background-color: rgb(25, 160, 201);
+.footer {
+  background-color: #aaa8a8;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
+
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+
+#logo img {
+  width: 100px; 
+}
+
+
+.footer-section h3 {
+  font-size: 18px;
+}
+
+
+#redes-sociales ul {
+  list-style: none;
+  padding: 0;
+}
+
+#redes-sociales ul li {
+  margin-bottom: 10px;
+}
+
+#redes-sociales a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#redes-sociales a:hover {
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   .titulo {
@@ -245,3 +277,34 @@ footer {
     padding: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
